@@ -1,6 +1,6 @@
 # auto_landing
 ## 说明
-- 本科毕设仿真实验，环境是Ubuntu 20.04，仿真环境 [XTDrone](https://github.com/robin-shaun/XTDrone/tree/master)
+- 本科毕设仿真实验，实验室github上有使用realsense455的[着陆历程](https://github.com/HITSZ-MAS/auto_landing) 环境是Ubuntu 20.04，仿真环境 [XTDrone](https://github.com/robin-shaun/XTDrone/tree/master)
 - 主要改编在 [XTDrone使用文档](https://www.yuque.com/xtdrone/manual_cn) 中的[多无人机降落](https://www.yuque.com/xtdrone/manual_cn/precision_landing) 章节，主要改编地方在于：
     - 把多无人机修改为单无人机
     - 更换控制器，飞行更加稳定，并可以灵活切换追踪，着陆状态
