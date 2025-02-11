@@ -1,0 +1,45 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/xin/auto_landing/devel/include/**",
+        "/home/xin/catkin_ws/devel/include/**",
+        "/home/xin/rotorsex1/devel/include/**",
+        "/home/xin/realsense_ws/devel/include/**",
+        "/home/xin/0306ex1/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/xin/auto_landing/src/auto_landing/package_from_xt/apriltag_ros/include/**",
+        "/home/xin/auto_landing/src/auto_landing/package_from_xt/catvehicle/include/**",
+        "/home/xin/realsense_ws/src/ddynamic_reconfigure/include/**",
+        "/home/xin/auto_landing/src/auto_landing/package_from_xt/gazebo_ros_pkgs/gazebo_plugins/include/**",
+        "/home/xin/auto_landing/src/auto_landing/package_from_xt/gazebo_ros_pkgs/gazebo_ros/include/**",
+        "/home/xin/auto_landing/src/auto_landing/package_from_xt/gazebo_ros_pkgs/gazebo_ros_control/include/**",
+        "/home/xin/auto_landing/src/auto_landing/package_from_xt/imu_tools/imu_complementary_filter/include/**",
+        "/home/xin/auto_landing/src/auto_landing/package_from_xt/imu_tools/imu_filter_madgwick/include/**",
+        "/home/xin/rotorsex1/src/mav_comm/mav_msgs/include/**",
+        "/home/xin/rotorsex1/src/mav_comm/mav_planning_msgs/include/**",
+        "/home/xin/auto_landing/src/auto_landing/my_settings/myer/include/**",
+        "/home/xin/auto_landing/src/auto_landing/package_from_xt/optimize_estimation/include/**",
+        "/home/xin/realsense_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/xin/rotorsex1/src/rotors_simulator/rotors_control/include/**",
+        "/home/xin/rotorsex1/src/rotors_simulator/rotors_gazebo_plugins/include/**",
+        "/home/xin/rotorsex1/src/rotors_simulator/rotors_hil_interface/include/**",
+        "/home/xin/rotorsex1/src/rotors_simulator/rotors_joy_interface/include/**",
+        "/home/xin/catkin_ws/src/se3_controller/include/**",
+        "/home/xin/auto_landing/src/auto_landing/my_settings/se3_for_landing/include/**",
+        "/home/xin/auto_landing/src/auto_landing/package_from_xt/sicktoolbox/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

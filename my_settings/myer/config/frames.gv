@@ -1,0 +1,28 @@
+digraph G {
+"ugv_0/base_link" -> "ugv_0/back_left_wheel_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 126.426\nOldest transform: 121.466\n"];
+"ugv_0/odom" -> "ugv_0/base_link"[label=" Broadcaster: /gazebo\nAverage rate: 97.222\nBuffer length: 4.968\nMost recent transform: 126.452\nOldest transform: 121.484\n"];
+"ugv_0/base_link" -> "ugv_0/back_right_wheel_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 126.426\nOldest transform: 121.466\n"];
+"ugv_0/base_link" -> "ugv_0/front_left_steering_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 126.426\nOldest transform: 121.466\n"];
+"ugv_0/base_link" -> "ugv_0/front_right_steering_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 50.0\nBuffer length: 4.96\nMost recent transform: 126.426\nOldest transform: 121.466\n"];
+"map" -> "map_ned"[label=" Broadcaster: /mavros\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"odom" -> "odom_ned"[label=" Broadcaster: /mavros\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "base_link_frd"[label=" Broadcaster: /mavros\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"map" -> "base_link"[label=" Broadcaster: /mavros\nAverage rate: 30.235\nBuffer length: 4.928\nMost recent transform: 126.429\nOldest transform: 121.501\n"];
+"ugv_0/base_link" -> "ugv_0/camera_left_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ugv_0/base_link" -> "ugv_0/camera_right_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ugv_0/base_link" -> "ugv_0/front_laser_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ugv_0/base_link" -> "ugv_0/main_mass"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ugv_0/base_link" -> "ugv_0/triclops_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ugv_0/triclops_link" -> "ugv_0/velodyne_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"ugv_0/front_left_steering_link" -> "ugv_0/front_left_wheel_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 33.59\nBuffer length: 4.942\nMost recent transform: 126.426\nOldest transform: 121.484\n"];
+"ugv_0/front_right_steering_link" -> "ugv_0/front_right_wheel_link"[label=" Broadcaster: /ugv_0/robot_state_publisherugv_0\nAverage rate: 33.59\nBuffer length: 4.942\nMost recent transform: 126.426\nOldest transform: 121.484\n"];
+"camera_link" -> "tag_0"[label=" Broadcaster: /apriltag_ros_continuous_node\nAverage rate: 23.838\nBuffer length: 4.95\nMost recent transform: 126.394\nOldest transform: 121.444\n"];
+"base_link" -> "camera_link"[label=" Broadcaster: /base_link_to_camera_link\nAverage rate: 10.208\nBuffer length: 4.8\nMost recent transform: 126.46\nOldest transform: 121.66\n"];
+"camera_link" -> "tag_2"[label=" Broadcaster: /apriltag_ros_continuous_node\nAverage rate: 23.838\nBuffer length: 4.95\nMost recent transform: 126.394\nOldest transform: 121.444\n"];
+"camera_link" -> "tag_1"[label=" Broadcaster: /apriltag_ros_continuous_node\nAverage rate: 23.838\nBuffer length: 4.95\nMost recent transform: 126.394\nOldest transform: 121.444\n"];
+"camera_link" -> "my_bundle"[label=" Broadcaster: /apriltag_ros_continuous_node\nAverage rate: 23.838\nBuffer length: 4.95\nMost recent transform: 126.394\nOldest transform: 121.444\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 126.468"[ shape=plaintext ] ;
+}->"map";
+}

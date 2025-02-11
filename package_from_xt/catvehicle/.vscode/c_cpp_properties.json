@@ -1,0 +1,38 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/xin/catkin_ws/devel/include/**",
+        "/home/xin/rotorsex1/devel/include/**",
+        "/home/xin/realsense_ws/devel/include/**",
+        "/home/xin/0306ex1/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/xin/catkin_ws/src/apriltag_ros/include/**",
+        "/home/xin/catkin_ws/src/catvehicle/include/**",
+        "/home/xin/realsense_ws/src/ddynamic_reconfigure/include/**",
+        "/home/xin/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/**",
+        "/home/xin/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros/include/**",
+        "/home/xin/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros_control/include/**",
+        "/home/xin/rotorsex1/src/mav_comm/mav_msgs/include/**",
+        "/home/xin/rotorsex1/src/mav_comm/mav_planning_msgs/include/**",
+        "/home/xin/realsense_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/xin/rotorsex1/src/rotors_simulator/rotors_control/include/**",
+        "/home/xin/rotorsex1/src/rotors_simulator/rotors_gazebo_plugins/include/**",
+        "/home/xin/rotorsex1/src/rotors_simulator/rotors_hil_interface/include/**",
+        "/home/xin/rotorsex1/src/rotors_simulator/rotors_joy_interface/include/**",
+        "/home/xin/catkin_ws/src/sicktoolbox/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

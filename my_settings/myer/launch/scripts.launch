@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="myer" type="multirotor_communication.py" name="multirotor_communication" output="screen" args="iris 0"/>
+    <node pkg="myer" type="get_local_pose.py" name="get_local_pose" output="screen" args="iris 1"/>
+    <!-- <node pkg="myer" type="multirotor_keyboard_control.py" name="multirotor_keyboard_control" output="screen" args="iris 1 vel"/> -->
+    <!-- <node pkg="myer" type="key_landing" name="multirotor_keyboard_control" output="screen"/> -->
+    <node pkg="myer" type="ugv_keyboard_control.py" name="uav_keyboard_control" output="screen"/>
+    <include file="$(find apriltag_ros)/launch/xtdrone_detection_for1.launch"/>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find myer)/config/rviz.rviz"/>
+</launch>

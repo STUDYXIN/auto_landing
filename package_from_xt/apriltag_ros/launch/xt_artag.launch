@@ -1,0 +1,29 @@
+<launch>
+  <arg name="launch_prefix" default="" /> <!-- set to value="gdbserver localhost:10000" for remote debugging -->
+  
+  <!-- Set parameters -->
+  <rosparam command="load" file="$(find apriltag_ros)/config/settings.yaml" ns="apriltag_ros_continuous_node" />
+  <rosparam command="load" file="$(find apriltag_ros)/config/tags.yaml" ns="apriltag_ros_continuous_node" />
+
+  <node pkg="apriltag_ros" type="apriltag_ros_continuous_node" name="apriltag_ros_continuous_node" clear_params="true" output="screen" launch-prefix="$(arg launch_prefix)" >
+    <!-- Remap topics from those used in code to those on the ROS network -->
+    <remap from="image_rect" to="/iris_0/camera/image_raw" />
+    <remap from="camera_info" to="/iris_0/camera/camera_info" />
+
+    <param name="camera_frame" type="str" value="camera_link" />
+    <param name="publish_tag_detections_image" type="bool" value="true" />      <!-- default: false -->
+  </node>
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera_link"
+    args="0 0 -0.05 1.5707963 3.1415927 0 base_link camera_link 100" />
+
+    <!-- pkg：包名，tf
+        type：类型，static_transform_publisher
+        name：名称，自定，便于理解
+        arg：tf参数， x y z yaw pitch roll frame_id child_frame_id period_in_ms.
+            1.x y z 分别代表着相应轴的平移，单位是 米。
+            2.yaw pitch roll 分别代表着绕z y x 三个轴的转动，单位是 弧度。
+            3.frame_id 为坐标系变换中的父坐标系， child_frame_id为坐标系变换中的子坐标系。
+            4.period_in_ms 为发布频率，单位为 毫秒。通常取100。一毫秒为一秒的千分之一，100毫秒即为0.1秒，也就是10Hz。 -->
+
+
+</launch>

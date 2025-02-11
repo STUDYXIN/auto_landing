@@ -1,0 +1,23 @@
+<launch>
+    <!-- <node pkg="myer" type="my_communication.py" name="multirotor_communication" output="screen"/> -->
+    <!-- <node pkg="myer" type="my_landing" name="multirotor_communication" output="screen"/> -->
+    <node pkg="myer" type="my_local_pose3" name="get_local_pose" output="screen"/>
+    <node pkg="myer" type="se3_mode_control" name="se3_mode_control" output="screen"/>
+    <!-- <node pkg="myer" type="multirotor_keyboard_control.py" name="multirotor_keyboard_control" output="screen" args="iris 1 vel"/> -->
+    <!-- <node pkg="myer" type="key_landing" name="multirotor_keyboard_control" output="screen"/> -->
+    <node pkg="myer" type="ugv_keyboard_control.py" name="uav_keyboard_control" output="screen"/>
+
+    <include file="$(find apriltag_ros)/launch/xt_artag.launch"/>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find myer)/config/rviz_ekf.rviz"/>
+<!-- 
+      <node pkg="tf" type="static_transform_publisher" name="map_to_tag"
+    args="0.3 0 1.75 0 0 0 map tag 100" /> -->
+        <!-- pkg：包名，tf
+        type：类型，static_transform_publisher
+        name：名称，自定，便于理解
+        arg：tf参数， x y z yaw pitch roll frame_id child_frame_id period_in_ms.
+            1.x y z 分别代表着相应轴的平移，单位是 米。
+            2.yaw pitch roll 分别代表着绕z y x 三个轴的转动，单位是 弧度。
+            3.frame_id 为坐标系变换中的父坐标系， child_frame_id为坐标系变换中的子坐标系。
+            4.period_in_ms 为发布频率，单位为 毫秒。通常取100。一毫秒为一秒的千分之一，100毫秒即为0.1秒，也就是10Hz。 -->
+</launch>
