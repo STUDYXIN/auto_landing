@@ -61,7 +61,7 @@
             <arg name="gcs_url" value=""/>
             <arg name="tgt_system" value="$(eval 1 + arg('ID'))"/>
             <arg name="tgt_component" value="1"/>
-            <arg name="config_yaml" value="$(find mavros)/launch/my_iris.yaml"/>
+            <arg name="config_yaml" value="$(find myer)/launch/my_iris.yaml"/>
         </include>
 
     <!-- <node pkg="tf" type="static_transform_publisher" name="0_base_link_to_base_link_frd"
