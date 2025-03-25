@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Taken from http://answers.ros.org/question/203270/how-do-i-get-the-distancies-between-frames-in-openni_tracker/
 # Otherwise, author Jonathan Sprinkle
 # Copyright (c) 2016 Arizona Board of Regents

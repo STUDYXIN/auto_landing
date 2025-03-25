@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
 import numpy as np
@@ -24,7 +24,7 @@ from strym import strymread
 
 print("Tensforflow Version: {}".format(tf.__version__))
 
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Initial Date: June 2020
 # Author: Rahul Bhadani
 # Copyright (c)  Rahul Bhadani, Arizona Board of Regents
