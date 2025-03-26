@@ -1,10 +1,13 @@
 # auto_landing
 ## 说明
-- 本科毕设仿真实验，实验室github上有使用realsense455的[着陆历程](https://github.com/HITSZ-MAS/auto_landing) 环境是Ubuntu 20.04，仿真环境 [XTDrone](https://github.com/robin-shaun/XTDrone/tree/master)
-- 主要改编在 [XTDrone使用文档](https://www.yuque.com/xtdrone/manual_cn) 中的[多无人机降落](https://www.yuque.com/xtdrone/manual_cn/precision_landing) 章节，主要改编地方在于：
-    - 把多无人机修改为单无人机
-    - 更换控制器，飞行更加稳定，并可以灵活切换追踪，着陆状态
-- 由于是刚学习ROS的时候搞的项目，代码比较乱，配置环境可能会遇到比较多的问题，如果看官方文档无法解决，可以联系我，可以找我要[我的XTDrone PX4_Firmware 工程文件 论文文件](https://pan.baidu.com/s/1nRMLu1X8nQfmc9oagIE2JA) 
+- 本科毕设仿真实验，MASLAB实验室github上有使用realsense455的[实机实验](https://github.com/HITSZ-MAS/auto_landing)代码， 环境是Ubuntu 20.04，仿真环境搭建参考 [XTDrone](https://github.com/robin-shaun/XTDrone/tree/master)
+- 参考 [XTDrone使用文档](https://www.yuque.com/xtdrone/manual_cn) 中的[多无人机降落](https://www.yuque.com/xtdrone/manual_cn/precision_landing) 章节，本工作**主要贡献**：
+    - 整合 起飞-追踪-着陆 全过程，使其可以在一个简易的UI上实现状态切换（rqt_reconfigure/Tune）。
+    - 更换控制器为SE3控制器，无人机飞行更加稳定，替代原有简陋控制方案
+    - 脚本实现一键启动
+    - gazebo着陆场景搭建（单机单车场景）
+- 由于是本科刚学习ROS的时候搞的项目，没有严格的代码管理，且着陆过程没有规划算法的加入，整体不够鲁棒。
+- [我的XTDrone PX4_Firmware 工程文件 论文文件](https://pan.baidu.com/s/1nRMLu1X8nQfmc9oagIE2JA) 
 
 ---
 
@@ -18,8 +21,6 @@
 - `cp mylanding2.launch ~/PX4_Firmware/launch`
 - `cd ../../`
 - `catkin_make`
-
-`catkin_make`这一步在我的电脑上可以编译成功，但是不太清楚还需要哪些包的依赖，编译的时候提示什么包没有，可以先去XTDrone的例程看看有没有。
 
 ---
 
