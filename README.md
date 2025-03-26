@@ -6,8 +6,8 @@
     - 更换控制器为SE3控制器，无人机飞行更加稳定，替代原有简陋控制方案
     - 脚本实现一键启动
     - gazebo着陆场景搭建（单机单车场景）
-- 由于是本科刚学习ROS的时候搞的项目，没有严格的代码管理，且着陆过程没有规划算法的加入，整体不够鲁棒。
-- [我的XTDrone PX4_Firmware 工程文件 论文文件](https://pan.baidu.com/s/1nRMLu1X8nQfmc9oagIE2JA) 
+- 由于是本科刚学习ROS的时候搞的项目，没有严格的代码管理。且着陆过程没有规划算法的加入，整体不够鲁棒。
+- [我的XTDrone PX4_Firmware 工程文件 论文文件](https://pan.baidu.com/s/1nRMLu1X8nQfmc9oagIE2JA) ，提取码：0206。
 
 ---
 
